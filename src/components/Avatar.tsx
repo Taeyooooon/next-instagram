@@ -9,6 +9,7 @@ const Avatar = ({ image }: Props) => {
         className='rounded-full p-[0.1rem]'
         alt='user profile'
         src={image ?? undefined}
+        referrerPolicy='no-referrer'
       />
     </div>
   );
