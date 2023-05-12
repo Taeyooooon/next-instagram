@@ -50,7 +50,7 @@ const Nav = () => {
           {user && (
             <li>
               <Link href={`user/${user.username}`}>
-                <Avatar image={user.image} />
+                <Avatar image={user.image} size='small' highlight />
               </Link>
             </li>
           )}

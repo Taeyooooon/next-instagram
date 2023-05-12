@@ -13,7 +13,7 @@ const SigninPage = async ({ searchParams: { callbackUrl } }: Props) => {
   const session = await getServerSession();
   if (session) {
     redirect('/');
-  }
+  } 
   const providers = (await getProviders()) ?? {};
 
   return (
