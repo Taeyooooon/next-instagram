@@ -11,7 +11,7 @@ interface Props {
   color?: string;
 }
 
-const GirdSpinner = ({ color = 'red' }: Props) => {
+const GridSpinner = ({ color = 'red' }: Props) => {
   return <GridLoader color={color} />;
 };
-export default GirdSpinner;
+export default GridSpinner;

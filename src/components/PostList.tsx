@@ -2,7 +2,7 @@
 import { SimplePost } from '@/model/post';
 import useSWR from 'swr';
 import PostListCard from './PostListCard';
-import GirdSpinner from './ui/GirdSpinner';
+import GridSpinner from './ui/GridSpinner';
 
 const PostList = () => {
   const { data: posts, isLoading, error } = useSWR<SimplePost[]>('/api/posts');
@@ -11,7 +11,7 @@ const PostList = () => {
     <section>
       {isLoading && (
         <div className='text-center mt-32'>
-          <GirdSpinner color='#eb8f8f' />
+          <GridSpinner color='#eb8f8f' />
         </div>
       )}
       {posts && (
