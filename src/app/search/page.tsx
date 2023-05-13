@@ -1,4 +1,6 @@
-const page = () => {
-  return <>search page</>;
+import UserSearch from '@/components/UserSearch';
+
+const SearchPage = () => {
+  return <UserSearch />;
 };
-export default page;
+export default SearchPage;
