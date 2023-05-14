@@ -1,7 +1,10 @@
 import Signin from '@/components/Signin';
+import { Metadata } from 'next';
 import { getServerSession } from 'next-auth';
 import { getProviders } from 'next-auth/react';
 import { redirect } from 'next/navigation';
+
+ 
 
 interface Props {
   searchParams: {
@@ -13,7 +16,7 @@ const SigninPage = async ({ searchParams: { callbackUrl } }: Props) => {
   const session = await getServerSession();
   if (session) {
     redirect('/');
-  } 
+  }
   const providers = (await getProviders()) ?? {};
 
   return (
