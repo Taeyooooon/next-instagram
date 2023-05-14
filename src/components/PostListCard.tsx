@@ -38,13 +38,7 @@ const PostListCard = ({ post, priority }: Props) => {
         createdAt={createdAt}
       />
       <CommentForm />
-      {openModal && (
-        <ModalPortal>
-          <PostModal onClose={() => setOpenModal(false)}>
-            <PostDetail post={post} />
-          </PostModal>
-        </ModalPortal>
-      )}
+      
     </article>
   );
 };
