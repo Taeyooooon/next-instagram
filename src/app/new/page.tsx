@@ -1,4 +1,4 @@
-const page = () => {
+const NewPage = () => {
   return <>new page</>;
 };
-export default page;
+export default NewPage;

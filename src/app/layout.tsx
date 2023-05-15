@@ -1,9 +1,9 @@
-import Nav from '@/components/Nav';
-import './globals.css';
+import { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
+import './globals.css';
+import Nav from '@/components/Nav';
 import AuthContext from '@/context/AuthContext';
 import SWRConfigContext from '@/context/SWRConfigContext';
-import { Metadata } from 'next';
 
 const openSans = Open_Sans({ subsets: ['latin'] });
 
